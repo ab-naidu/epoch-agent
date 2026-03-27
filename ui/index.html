@@ -281,23 +281,22 @@
 
     await sleep(1500);
 
-    // Fetch real data from API
+    // Show problems — try live API first, fall back to demo data
+    const mockProblems = [
+      { title: 'Rising Error Rate', severity: 8, category: 'reliability', description: 'Error rate up 4x in 6 hours — outage risk in 48h', suggested_action: 'Check logs, scale service' },
+      { title: 'Database Query Degradation', severity: 9, category: 'performance', description: 'Slow query count grown 4x — DB connection limit in 48h', suggested_action: 'Add index on users.created_at' },
+      { title: 'Unsigned Commits on Main', severity: 7, category: 'security', description: 'Recent commits missing GPG signatures — security policy violation', suggested_action: 'Enforce branch protection rules' },
+    ];
     try {
-      const res = await fetch('/problems/open', {
-        headers: { 'Authorization': 'Bearer demo-token' }
-      });
+      const res = await fetch('/problems/open', { headers: { 'Authorization': 'Bearer demo-token' }, signal: AbortSignal.timeout(2000) });
       if (res.ok) {
         const data = await res.json();
-        renderProblems(data.problems || []);
-        document.getElementById('statProblems').textContent = data.count || 0;
-      }
+        if (data.problems && data.problems.length > 0) {
+          renderProblems(data.problems);
+          document.getElementById('statProblems').textContent = data.count || 0;
+        } else { throw new Error('empty'); }
+      } else { throw new Error('not ok'); }
     } catch {
-      // API not running — show mock data for demo
-      const mockProblems = [
-        { title: 'Rising Error Rate', severity: 8, category: 'reliability', description: 'Error rate up 4x in 6 hours — outage risk in 48h', suggested_action: 'Check logs, scale service' },
-        { title: 'Slow Database Queries', severity: 6, category: 'performance', description: 'P99 latency at 890ms — threshold is 200ms', suggested_action: 'Add index on users.created_at' },
-        { title: 'Unverified Commits', severity: 7, category: 'security', description: 'Recent commits missing GPG signatures', suggested_action: 'Enforce branch protection rules' },
-      ];
       renderProblems(mockProblems);
       document.getElementById('statProblems').textContent = mockProblems.length;
     }
