@@ -64,6 +64,9 @@ class EpochAgent:
             log.info(f"Planning for: {problem.get('title')}")
             plan = self.planner.plan(problem)
 
+            # Always create a GitHub issue for every detected problem
+            self.executor.create_issue_for_problem(problem)
+
             # 6. EXECUTE or ESCALATE
             if plan.get("plan_type") == "escalate":
                 log.info(f"Escalating: {problem.get('title')}")

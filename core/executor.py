@@ -11,6 +11,29 @@ class Executor:
         self.github_repo = os.getenv("GITHUB_REPO", "")  # owner/repo
         self.observer = TrueFoundryObserver()
 
+    def create_issue_for_problem(self, problem: dict) -> dict:
+        """Always create a well-formed GitHub issue for a detected problem."""
+        severity = problem.get("severity", 5)
+        label = "critical" if severity >= 8 else "high" if severity >= 6 else "medium"
+        body = (
+            f"## EPOCH Autonomous Detection\n\n"
+            f"**Category:** {problem.get('category', 'unknown')}\n"
+            f"**Severity:** {severity}/10\n"
+            f"**Probability:** {int(problem.get('probability', 0) * 100)}%\n\n"
+            f"### Description\n{problem.get('description', '')}\n\n"
+            f"### Predicted Impact\n{problem.get('predicted_impact', '')}\n\n"
+            f"### Suggested Action\n{problem.get('suggested_action', '')}\n\n"
+            f"---\n*Detected autonomously by EPOCH — no human prompt required.*"
+        )
+        return self._github_action({
+            "params": {
+                "action": "create_issue",
+                "title": f"[EPOCH] {problem.get('title')}",
+                "body": body,
+                "labels": ["epoch-agent", label]
+            }
+        })
+
     def execute_plan(self, plan: dict) -> list[dict]:
         results = []
         for step in plan.get("steps", []):

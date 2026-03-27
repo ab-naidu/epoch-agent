@@ -79,7 +79,91 @@
       "detected_at": "2026-03-27T21:20:26.796783",
       "status": "resolved",
       "resolved_at": "2026-03-27T21:20:34.340007"
+    },
+    {
+      "id": "1",
+      "title": "Rising Error Rate",
+      "description": "The error rate trend is rising, indicating increasing issues in the system that need to be addressed.",
+      "severity": 8,
+      "probability": 0.8,
+      "fixability": 7,
+      "predicted_impact": "If not fixed, the rising error rate will lead to decreased system reliability and potential user dissatisfaction.",
+      "suggested_action": "Analyze recent logs and code changes to identify the root cause of the rising error rate and implement fixes.",
+      "category": "reliability",
+      "detected_at": "2026-03-27T21:21:27.607102",
+      "status": "resolved",
+      "resolved_at": "2026-03-27T21:21:40.728971"
+    },
+    {
+      "id": "3",
+      "title": "High Latency",
+      "description": "The p99 latency is 420ms, which is higher than optimal and may affect user experience.",
+      "severity": 7,
+      "probability": 0.6,
+      "fixability": 6,
+      "predicted_impact": "High latency may lead to poor user experience and reduced system performance.",
+      "suggested_action": "Investigate and optimize the code and database queries to reduce latency.",
+      "category": "performance",
+      "detected_at": "2026-03-27T21:21:40.737088",
+      "status": "resolved",
+      "resolved_at": "2026-03-27T21:21:50.337579"
+    },
+    {
+      "id": "2",
+      "title": "Unverified Commits",
+      "description": "Recent commits are unsigned and unverified, which may pose security risks and reduce code integrity.",
+      "severity": 6,
+      "probability": 0.7,
+      "fixability": 8,
+      "predicted_impact": "Unverified commits may introduce security vulnerabilities and reduce trust in the codebase.",
+      "suggested_action": "Implement commit verification processes and ensure all commits are signed and verified.",
+      "category": "security",
+      "detected_at": "2026-03-27T21:21:50.347113",
+      "status": "resolved",
+      "resolved_at": "2026-03-27T21:21:57.437606"
+    },
+    {
+      "id": "4",
+      "title": "Slow Database Queries",
+      "description": "There are 3 slow database queries, which may be impacting system performance.",
+      "severity": 6,
+      "probability": 0.6,
+      "fixability": 7,
+      "predicted_impact": "Slow database queries can lead to increased latency and reduced system efficiency.",
+      "suggested_action": "Optimize the slow database queries to improve overall system performance.",
+      "category": "performance",
+      "detected_at": "2026-03-27T21:21:57.444622",
+      "status": "resolved",
+      "resolved_at": "2026-03-27T21:22:03.012481"
+    },
+    {
+      "id": "rising-error-rate-20260327",
+      "title": "Rising Error Rate",
+      "description": "The system has shown a rising trend in error rates over the past few hours. This could indicate an underlying issue that needs to be addressed to prevent further degradation of system performance.",
+      "severity": 8,
+      "probability": 0.8,
+      "fixability": 7,
+      "predicted_impact": "If not addressed, the rising error rate could lead to system instability and potential downtime.",
+      "suggested_action": "Investigate recent code changes and logs to identify the root cause of the errors. Implement necessary fixes and monitor the system to ensure stability.",
+      "category": "reliability",
+      "detected_at": "2026-03-27T21:25:02.634463",
+      "status": "resolved",
+      "resolved_at": "2026-03-27T21:25:12.704728"
+    },
+    {
+      "id": "slow-db-queries-20260327",
+      "title": "Slow Database Queries",
+      "description": "There have been 3 slow database queries detected. These could be causing increased latency and should be optimized to improve overall system performance.",
+      "severity": 6,
+      "probability": 0.7,
+      "fixability": 8,
+      "predicted_impact": "Continued slow database queries will result in higher latency and reduced system performance.",
+      "suggested_action": "Analyze the slow queries and optimize them. Consider indexing strategies or query rewrites to improve performance.",
+      "category": "performance",
+      "detected_at": "2026-03-27T21:25:12.715249",
+      "status": "resolved",
+      "resolved_at": "2026-03-27T21:25:20.332409"
     }
   ],
-  "_updated_at": "2026-03-27T21:20:34.340007"
+  "_updated_at": "2026-03-27T21:25:20.332409"
 }
