@@ -63,4 +63,16 @@ python main.py api
 | GET | /problems/open | Auth0 | Unresolved problems |
 | POST | /problems/resolve | Auth0 | Mark problem resolved |
 
-## Built at Deep Agents Hackathon — AWS Builder Loft, March 2026
+## Hackathon
+
+Built at the **Deep Agents Hackathon** hosted at AWS Builder Loft on March 27, 2026.
+
+This project was conceived, designed, and built in a single day as part of the hackathon challenge:
+> "Build agents that plan, reason, and execute across complex multi-step tasks autonomously."
+
+EPOCH was my submission — an autonomous predictive agent that requires zero human prompts to operate. It observes your systems, reasons about what will break next, and acts before you even know there's a problem.
+
+Devpost: https://devpost.com
+GitHub: https://github.com/ab-naidu/epoch-agent
+
+Built by: [@ab-naidu](https://github.com/ab-naidu)
