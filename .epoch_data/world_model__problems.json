@@ -163,7 +163,41 @@
       "detected_at": "2026-03-27T21:25:12.715249",
       "status": "resolved",
       "resolved_at": "2026-03-27T21:25:20.332409"
+    },
+    {
+      "id": "test-p1",
+      "title": "Test Problem",
+      "severity": 7,
+      "detected_at": "2026-03-27T21:32:20.281962"
+    },
+    {
+      "id": "test-p2",
+      "title": "Resolve Me",
+      "severity": 5,
+      "detected_at": "2026-03-27T21:32:20.291687",
+      "status": "resolved",
+      "resolved_at": "2026-03-27T21:32:20.299687"
+    },
+    {
+      "id": "test-p3",
+      "title": "Timestamp Test",
+      "severity": 3,
+      "detected_at": "2026-03-27T21:32:20.311686"
+    },
+    {
+      "id": "p1",
+      "title": "Test Problem",
+      "severity": 8,
+      "probability": 0.9,
+      "fixability": 7,
+      "category": "reliability",
+      "description": "desc",
+      "predicted_impact": "impact",
+      "suggested_action": "fix",
+      "detected_at": "2026-03-27T21:32:26.143177",
+      "status": "resolved",
+      "resolved_at": "2026-03-27T21:32:26.149178"
     }
   ],
-  "_updated_at": "2026-03-27T21:25:20.332409"
+  "_updated_at": "2026-03-27T21:32:26.149178"
 }
