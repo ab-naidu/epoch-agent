@@ -1,0 +1,85 @@
+{
+  "items": [
+    {
+      "id": "P001",
+      "title": "Rising Error Rate Trend",
+      "description": "System metrics show an increasing trend in error rates, which could indicate developing issues in application stability or resource handling.",
+      "severity": 7,
+      "probability": 0.8,
+      "fixability": 6,
+      "predicted_impact": "If not addressed, rising error rates could lead to service degradation, poor user experience, and potential system instability within 24-48 hours.",
+      "suggested_action": "1. Analyze error logs to identify error patterns\n2. Review recent code changes that might contribute to errors\n3. Monitor resource utilization for potential bottlenecks",
+      "category": "reliability",
+      "detected_at": "2026-03-27T20:48:36.317090"
+    },
+    {
+      "id": "20260327-01",
+      "title": "Rising Error Rate",
+      "description": "The error rate trend is currently rising, indicating potential issues in the system that may lead to failures or degraded performance.",
+      "severity": 8,
+      "probability": 0.7,
+      "fixability": 6,
+      "predicted_impact": "If not addressed, the rising error rate could lead to system instability and increased downtime.",
+      "suggested_action": "Investigate recent changes and deployments to identify the cause of the rising error rate. Implement monitoring and alerting to catch issues early.",
+      "category": "reliability",
+      "detected_at": "2026-03-27T21:17:43.442092"
+    },
+    {
+      "id": "error-rate-increase",
+      "title": "Rising Error Rate",
+      "description": "The system's error rate has been on a rising trend, indicating potential issues in the code or system operations that need immediate attention.",
+      "severity": 8,
+      "probability": 0.8,
+      "fixability": 7,
+      "predicted_impact": "If not addressed, the rising error rate could lead to system instability and increased downtime.",
+      "suggested_action": "Investigate recent code changes and system operations to identify the cause of the rising error rate. Implement fixes and conduct thorough testing to ensure stability.",
+      "category": "reliability",
+      "detected_at": "2026-03-27T21:19:58.706996",
+      "status": "resolved",
+      "resolved_at": "2026-03-27T21:20:10.996434"
+    },
+    {
+      "id": "latency-p99-high",
+      "title": "High P99 Latency",
+      "description": "The P99 latency of 420ms is significantly high, suggesting that a small percentage of requests are experiencing long wait times, which could impact user experience.",
+      "severity": 6,
+      "probability": 0.7,
+      "fixability": 6,
+      "predicted_impact": "Continued high latency could lead to user dissatisfaction and potential loss of users.",
+      "suggested_action": "Analyze the causes of high latency, optimize code and database queries, and consider scaling resources if necessary.",
+      "category": "performance",
+      "detected_at": "2026-03-27T21:20:11.015292",
+      "status": "resolved",
+      "resolved_at": "2026-03-27T21:20:20.573630"
+    },
+    {
+      "id": "unsigned-commits",
+      "title": "Unsigned Commits",
+      "description": "Recent commits are unsigned, which could pose a security risk if malicious code is introduced.",
+      "severity": 7,
+      "probability": 0.5,
+      "fixability": 9,
+      "predicted_impact": "Unsigned commits can lead to security vulnerabilities if not properly vetted.",
+      "suggested_action": "Implement a policy requiring signed commits to ensure code integrity and security.",
+      "category": "security",
+      "detected_at": "2026-03-27T21:20:20.595157",
+      "status": "resolved",
+      "resolved_at": "2026-03-27T21:20:26.786792"
+    },
+    {
+      "id": "slow-db-queries",
+      "title": "Slow Database Queries",
+      "description": "There have been 3 instances of slow database queries, which could be a sign of inefficient queries or database performance issues.",
+      "severity": 5,
+      "probability": 0.6,
+      "fixability": 8,
+      "predicted_impact": "If not optimized, slow database queries can lead to increased response times and degraded system performance.",
+      "suggested_action": "Review and optimize the slow database queries. Consider indexing strategies and query rewrites to improve performance.",
+      "category": "performance",
+      "detected_at": "2026-03-27T21:20:26.796783",
+      "status": "resolved",
+      "resolved_at": "2026-03-27T21:20:34.340007"
+    }
+  ],
+  "_updated_at": "2026-03-27T21:20:34.340007"
+}

@@ -1,5 +1,6 @@
 """
 Escalator: triggers Bland AI voice calls when human intervention is needed.
+Non-blocking — agent continues even if escalation fails.
 """
 import os
 from integrations.bland import BlandAIClient
@@ -12,7 +13,7 @@ class Escalator:
         self.oncall_number = os.getenv("ONCALL_PHONE_NUMBER", "")
 
     def escalate(self, problem: dict, plan: dict) -> dict:
-        if not self.oncall_number:
+        if not self.oncall_number or self.oncall_number == "+1xxxxxxxxxx":
             return {"status": "skipped", "reason": "no oncall number configured"}
 
         task = (
@@ -24,11 +25,14 @@ class Escalator:
             f"Please acknowledge and take action immediately."
         )
 
-        result = self.bland.call(
-            to_number=self.oncall_number,
-            task=task,
-            context=f"Problem severity: {problem.get('severity')}/10"
-        )
-
-        self.observer.log_action("escalate_call", str(result), severity="critical")
-        return result
+        try:
+            result = self.bland.call(
+                to_number=self.oncall_number,
+                task=task,
+                context=f"Problem severity: {problem.get('severity')}/10"
+            )
+            self.observer.log_action("escalate_call", str(result), severity="critical")
+            return result
+        except Exception as e:
+            self.observer.log_action("escalate_failed", str(e), severity="error")
+            return {"status": "error", "detail": str(e)}

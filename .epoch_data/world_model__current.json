@@ -1,0 +1,263 @@
+{
+  "github": {
+    "commits": [
+      {
+        "sha": "3741daa35c9a67ac1c7d6d0fb8ed04f765a48409",
+        "node_id": "C_kwDORyp5BtoAKDM3NDFkYWEzNWM5YTY3YWMxYzdkNmQwZmI4ZWQwNGY3NjVhNDg0MDk",
+        "commit": {
+          "author": {
+            "name": "naidu1212",
+            "email": "61552332+naidu1212@users.noreply.github.com",
+            "date": "2026-03-27T19:37:08Z"
+          },
+          "committer": {
+            "name": "naidu1212",
+            "email": "61552332+naidu1212@users.noreply.github.com",
+            "date": "2026-03-27T19:37:08Z"
+          },
+          "message": "docs: add hackathon context and builder credits",
+          "tree": {
+            "sha": "b7401e47bcf6f471b558b9dcdf460a1075646d51",
+            "url": "https://api.github.com/repos/ab-naidu/epoch-agent/git/trees/b7401e47bcf6f471b558b9dcdf460a1075646d51"
+          },
+          "url": "https://api.github.com/repos/ab-naidu/epoch-agent/git/commits/3741daa35c9a67ac1c7d6d0fb8ed04f765a48409",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null,
+            "verified_at": null
+          }
+        },
+        "url": "https://api.github.com/repos/ab-naidu/epoch-agent/commits/3741daa35c9a67ac1c7d6d0fb8ed04f765a48409",
+        "html_url": "https://github.com/ab-naidu/epoch-agent/commit/3741daa35c9a67ac1c7d6d0fb8ed04f765a48409",
+        "comments_url": "https://api.github.com/repos/ab-naidu/epoch-agent/commits/3741daa35c9a67ac1c7d6d0fb8ed04f765a48409/comments",
+        "author": {
+          "login": "ab-naidu",
+          "id": 61552332,
+          "node_id": "MDQ6VXNlcjYxNTUyMzMy",
+          "avatar_url": "https://avatars.githubusercontent.com/u/61552332?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ab-naidu",
+          "html_url": "https://github.com/ab-naidu",
+          "followers_url": "https://api.github.com/users/ab-naidu/followers",
+          "following_url": "https://api.github.com/users/ab-naidu/following{/other_user}",
+          "gists_url": "https://api.github.com/users/ab-naidu/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/ab-naidu/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/ab-naidu/subscriptions",
+          "organizations_url": "https://api.github.com/users/ab-naidu/orgs",
+          "repos_url": "https://api.github.com/users/ab-naidu/repos",
+          "events_url": "https://api.github.com/users/ab-naidu/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/ab-naidu/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "ab-naidu",
+          "id": 61552332,
+          "node_id": "MDQ6VXNlcjYxNTUyMzMy",
+          "avatar_url": "https://avatars.githubusercontent.com/u/61552332?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ab-naidu",
+          "html_url": "https://github.com/ab-naidu",
+          "followers_url": "https://api.github.com/users/ab-naidu/followers",
+          "following_url": "https://api.github.com/users/ab-naidu/following{/other_user}",
+          "gists_url": "https://api.github.com/users/ab-naidu/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/ab-naidu/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/ab-naidu/subscriptions",
+          "organizations_url": "https://api.github.com/users/ab-naidu/orgs",
+          "repos_url": "https://api.github.com/users/ab-naidu/repos",
+          "events_url": "https://api.github.com/users/ab-naidu/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/ab-naidu/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "bbeb2bf82a3ad9971b9003efeaa0aca4524eb416",
+            "url": "https://api.github.com/repos/ab-naidu/epoch-agent/commits/bbeb2bf82a3ad9971b9003efeaa0aca4524eb416",
+            "html_url": "https://github.com/ab-naidu/epoch-agent/commit/bbeb2bf82a3ad9971b9003efeaa0aca4524eb416"
+          }
+        ]
+      },
+      {
+        "sha": "bbeb2bf82a3ad9971b9003efeaa0aca4524eb416",
+        "node_id": "C_kwDORyp5BtoAKGJiZWIyYmY4MmEzYWQ5OTcxYjkwMDNlZmVhYTBhY2E0NTI0ZWI0MTY",
+        "commit": {
+          "author": {
+            "name": "naidu1212",
+            "email": "61552332+naidu1212@users.noreply.github.com",
+            "date": "2026-03-27T19:34:48Z"
+          },
+          "committer": {
+            "name": "naidu1212",
+            "email": "61552332+naidu1212@users.noreply.github.com",
+            "date": "2026-03-27T19:34:48Z"
+          },
+          "message": "feat: EPOCH autonomous predictive agent \u2014 Deep Agents Hackathon",
+          "tree": {
+            "sha": "f06a52e9c6fc444bd37b39d030b04af163e31ce4",
+            "url": "https://api.github.com/repos/ab-naidu/epoch-agent/git/trees/f06a52e9c6fc444bd37b39d030b04af163e31ce4"
+          },
+          "url": "https://api.github.com/repos/ab-naidu/epoch-agent/git/commits/bbeb2bf82a3ad9971b9003efeaa0aca4524eb416",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null,
+            "verified_at": null
+          }
+        },
+        "url": "https://api.github.com/repos/ab-naidu/epoch-agent/commits/bbeb2bf82a3ad9971b9003efeaa0aca4524eb416",
+        "html_url": "https://github.com/ab-naidu/epoch-agent/commit/bbeb2bf82a3ad9971b9003efeaa0aca4524eb416",
+        "comments_url": "https://api.github.com/repos/ab-naidu/epoch-agent/commits/bbeb2bf82a3ad9971b9003efeaa0aca4524eb416/comments",
+        "author": {
+          "login": "ab-naidu",
+          "id": 61552332,
+          "node_id": "MDQ6VXNlcjYxNTUyMzMy",
+          "avatar_url": "https://avatars.githubusercontent.com/u/61552332?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ab-naidu",
+          "html_url": "https://github.com/ab-naidu",
+          "followers_url": "https://api.github.com/users/ab-naidu/followers",
+          "following_url": "https://api.github.com/users/ab-naidu/following{/other_user}",
+          "gists_url": "https://api.github.com/users/ab-naidu/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/ab-naidu/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/ab-naidu/subscriptions",
+          "organizations_url": "https://api.github.com/users/ab-naidu/orgs",
+          "repos_url": "https://api.github.com/users/ab-naidu/repos",
+          "events_url": "https://api.github.com/users/ab-naidu/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/ab-naidu/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "ab-naidu",
+          "id": 61552332,
+          "node_id": "MDQ6VXNlcjYxNTUyMzMy",
+          "avatar_url": "https://avatars.githubusercontent.com/u/61552332?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ab-naidu",
+          "html_url": "https://github.com/ab-naidu",
+          "followers_url": "https://api.github.com/users/ab-naidu/followers",
+          "following_url": "https://api.github.com/users/ab-naidu/following{/other_user}",
+          "gists_url": "https://api.github.com/users/ab-naidu/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/ab-naidu/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/ab-naidu/subscriptions",
+          "organizations_url": "https://api.github.com/users/ab-naidu/orgs",
+          "repos_url": "https://api.github.com/users/ab-naidu/repos",
+          "events_url": "https://api.github.com/users/ab-naidu/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/ab-naidu/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "parents": []
+      }
+    ],
+    "pulls": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/ab-naidu/epoch-agent/issues/1",
+        "repository_url": "https://api.github.com/repos/ab-naidu/epoch-agent",
+        "labels_url": "https://api.github.com/repos/ab-naidu/epoch-agent/issues/1/labels{/name}",
+        "comments_url": "https://api.github.com/repos/ab-naidu/epoch-agent/issues/1/comments",
+        "events_url": "https://api.github.com/repos/ab-naidu/epoch-agent/issues/1/events",
+        "html_url": "https://github.com/ab-naidu/epoch-agent/issues/1",
+        "id": 4155973747,
+        "node_id": "I_kwDORyp5Bs73tyBz",
+        "number": 1,
+        "title": "EPOCH detected issue",
+        "user": {
+          "login": "ab-naidu",
+          "id": 61552332,
+          "node_id": "MDQ6VXNlcjYxNTUyMzMy",
+          "avatar_url": "https://avatars.githubusercontent.com/u/61552332?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ab-naidu",
+          "html_url": "https://github.com/ab-naidu",
+          "followers_url": "https://api.github.com/users/ab-naidu/followers",
+          "following_url": "https://api.github.com/users/ab-naidu/following{/other_user}",
+          "gists_url": "https://api.github.com/users/ab-naidu/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/ab-naidu/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/ab-naidu/subscriptions",
+          "organizations_url": "https://api.github.com/users/ab-naidu/orgs",
+          "repos_url": "https://api.github.com/users/ab-naidu/repos",
+          "events_url": "https://api.github.com/users/ab-naidu/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/ab-naidu/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 10540238804,
+            "node_id": "LA_kwDORyp5Bs8AAAACdD9H1A",
+            "url": "https://api.github.com/repos/ab-naidu/epoch-agent/labels/epoch-agent",
+            "name": "epoch-agent",
+            "color": "ededed",
+            "default": false,
+            "description": null
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2026-03-27T21:17:49Z",
+        "updated_at": "2026-03-27T21:17:49Z",
+        "closed_at": null,
+        "assignee": null,
+        "author_association": "OWNER",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": null,
+        "closed_by": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/ab-naidu/epoch-agent/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/ab-naidu/epoch-agent/issues/1/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null,
+        "pinned_comment": null
+      }
+    ],
+    "actions/runs": {
+      "total_count": 0,
+      "workflow_runs": []
+    }
+  },
+  "system_metrics": {
+    "cpu_trend": "stable",
+    "error_rate_trend": "rising",
+    "latency_p99_ms": 420,
+    "db_query_slow_count": 3
+  },
+  "last_updated": "2026-03-27T21:19:52.095643",
+  "_updated_at": "2026-03-27T21:19:52.095643"
+}

@@ -5,7 +5,7 @@ class BlandAIClient:
         self.api_key = os.getenv("BLAND_API_KEY")
         self.from_number = os.getenv("BLAND_PHONE_NUMBER")
         self.base_url = "https://api.bland.ai/v1"
-        self.headers = {"authorization": self.api_key}
+        self.headers = {"authorization": f"Bearer {self.api_key}"}
 
     def call(self, to_number: str, task: str, context: str = "") -> dict:
         """Trigger an autonomous voice call to escalate an issue."""
